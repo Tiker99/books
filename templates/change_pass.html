@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+change password
+{% endblock %}
+
+{% block body %}
+<form action="/change_pass/done" method="POST">
+  <label for="password">enter new password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <label for="password1">repeat new password:</label>
+  <input type="password" id="password1" name="password1">
+  {% if mismatched is defined %}
+  <span style="color: red">Passwords doesn't match</span>
+  {% endif %}
+  <br><br>
+
+    <button type="submit" name="submit">Change</button>
+</form>
+{% endblock %}

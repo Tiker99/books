@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+BOOK
+{% endblock %}
+
+{% block body %}
+
+<div>
+     <img src="https://wallpapercave.com/wp/wp2297884.jpg" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+    <table>
+        <tr>
+            <td>Title</td>
+            <td>{{book["title"]}}</td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td>{{book["author"]}}</td>
+        </tr>
+        <tr>
+            <td>Book Genres</td>
+            <td>
+                {{book["genre"][0]}}{% for genre in book["genre"][1:] %}, {{genre}}{% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td>Pages</td>
+            <td>{{book["pages"]}}</td>
+        </tr>
+        <tr>
+            <td>Chapters</td>
+            <td>{{book["chapters"]}}</td>
+        </tr>
+        <tr>
+            <td>Release</td>
+            <td>{{book["release"]}}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

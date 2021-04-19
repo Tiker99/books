@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Library
+{% endblock %}
+
+{% block body %}
+<h1>Welcome to our library</h1>
+<div>
+    <span>TITLE</span>
+    <span>{{book["title"]}}</span><br>
+    <span>AUTHOR</span>
+    <span>{{book["author"]}}</span><br>
+    <span>BOOK GENRE</span>
+    {% for genre in book["genre"] %}
+    <span>{{genre}}</span>
+    {% endfor %}<br>
+    <span>PAGES</span>
+    <span>{{book["pages"]}}</span><br>
+    <span>CHAPTERS</span>
+    <span>{{book["chapters"]}}</span><br>
+    <span>RELEASE</span>
+    <span>{{book["release"]}}</span><br>
+</div>
+{% endblock %}

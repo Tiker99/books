@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+new-book
+{% endblock %}
+
+{% block body %}
+<form action="/addbookadm/add_book" method="POST">
+  <label for="title">title:</label>
+  <input type="text" id="title" name="title"><br><br>
+  <label for="author">author:</label>
+  <input type="text" id="author" name="author"><br><br>
+      <label for="genre">genre:</label>
+  <input type="text" id="genre" name="genre"><br><br>
+      <label for="pages">pages:</label>
+  <input type="number" id="pages" name="pages"><br><br>
+      <label for="chapters">chapters:</label>
+  <input type="number" id="chapters" name="chapters"><br><br>
+     <label for="release">release:</label>
+  <input type="number" id="release" name="release"><br><br>
+    <button type="submit" name="submit">Add</button>
+</form>
+{% endblock %}

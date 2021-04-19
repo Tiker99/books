@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+new-book
+{% endblock %}
+
+{% block body %}
+<img src="https://i.pinimg.com/originals/21/39/47/213947f33fb5509dd88f203bb74e4257.jpg" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+<form action="/new_book/add_book" method="POST">
+  <label for="title">title:</label>
+  <input type="text" id="title" name="title"><br><br>
+  <label for="author">author:</label>
+  <input type="text" id="author" name="author"><br><br>
+      <label for="genre">genre:</label>
+  <input type="text" id="genre" name="genre"><br><br>
+      <label for="pages">pages:</label>
+  <input type="number" id="pages" name="pages"><br><br>
+      <label for="chapters">chapters:</label>
+  <input type="number" id="chapters" name="chapters"><br><br>
+     <label for="release">release:</label>
+  <input type="number" id="release" name="release"><br><br>
+    <button type="submit" name="submit">Add</button>
+</form>
+{% endblock %}
+
+
+

@@ -1,0 +1,21 @@
+[
+  {
+    "full_name": "Hasmik Asatryan",
+    "nickname": "Has",
+    "password": "artash73",
+    "favorites": [
+      "Inferno",
+      "Graphs Theory"
+    ]
+  },
+  {
+    "nickname": "Sat",
+    "password": "password99",
+    "full_name": "Satenik Mnatsakanyan",
+    "favorites": [
+      "How to make friends",
+      "Inferno",
+      "Martin Eden"
+    ]
+  }
+]

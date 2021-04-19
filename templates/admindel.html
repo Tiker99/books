@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+admindel
+{% endblock %}
+
+{% block body %}
+<div>
+    <span style="color: red">users</span><br>
+    {% for nick in user_nicks %}
+    <a href="/admindel/deluser/{{nick}}">{{nick}}</a><br>
+    {% endfor %}
+    <br><br>
+    <span style="color: red">books</span><br>
+    {% for book in books %}
+    <button onclick='delAccept("{{book}}")'>{{book}}</button><br>
+    {% endfor %}
+    <script>
+    function delAccept(title) {
+        if(confirm("Accept delete")){
+            window.location.href = `/admindel/delbook/${title}`;
+        }
+    }
+    </script>
+</div>
+
+{% endblock %}

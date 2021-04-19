@@ -1,0 +1,20 @@
+[
+  {
+    "favorites": [
+      "Graphs Theory"
+    ],
+    "full_name": "Tigran Karagulyan",
+    "nickname": "Tiker",
+    "password": "ert"
+  },
+  {
+    "nickname": "Arto",
+    "password": "password1",
+    "full_name": "Artur Karagulyan",
+    "favorites": [
+      "How to make friends",
+      "Inferno",
+      "Graphs Theory"
+    ]
+  }
+]

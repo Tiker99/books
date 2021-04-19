@@ -1,0 +1,33 @@
+[
+  {
+    "author": "Jack London",
+    "chapters": 25,
+    "genre": [
+      "Drama"
+    ],
+    "pages": 176,
+    "release": 1909,
+    "title": "Martin Eden"
+  },
+  {
+    "author": "Petros Petrosyan",
+    "chapters": 9,
+    "genre": [
+      "Maths"
+    ],
+    "pages": 221,
+    "release": 2013,
+    "title": "Graphs Theory"
+  },
+  {
+    "author": "Den Braun",
+    "chapters": 97,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "pages": 697,
+    "release": 2013,
+    "title": "Inferno"
+  }
+]

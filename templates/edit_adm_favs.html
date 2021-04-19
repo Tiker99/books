@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Editory
+{% endblock %}
+
+{% block body %}
+<h1>Welcome to our library</h1>
+<div>
+    {% for book in books %}
+    {% if book in favs %}
+     <a href="/admin/{{book}}" style="color:#FF0000;">{{book}}</a>
+    <a href="/admin/{{book}}/remove"><button>Remove</button></a><br>
+    {% else %}
+    <a href="/admin/{{book}}">{{book}}</a>
+    <a href="/admin/{{book}}/add"><button>Add</button></a><br>
+    {% endif %}
+    {% endfor %}
+    <a href="/admin"><button>back to library</button></a>
+</div>
+{% endblock %}

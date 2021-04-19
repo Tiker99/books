@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+sign up
+{% endblock %}
+
+{% block body %}
+<form action="/signup/add_user" method="POST">
+  <label for="nickname">nickname:</label>
+  <input type="text" id="nickname" name="nickname" value="{{nick if nick is defined else ''}}"><br><br>
+  <label for="password">password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <label for="password1">repeat password:</label>
+  <input type="password" id="password1" name="password1">
+  {% if mismatch is defined %}
+  <span style="color: red">Passwords doesn't match</span>
+  {% endif %}
+  <br><br>
+  <label for="full_name">Full name:</label>
+  <input type="text" id="full_name" name="full_name" value="{{full_name if full_name is defined else ''}}"><br><br>
+
+    <button type="submit" name="submit">Add</button>
+</form>
+{% endblock %}

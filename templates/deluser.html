@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+delete user
+{% endblock %}
+
+{% block body %}
+<div>
+    {% for nick in user_nicks %}
+    <a href="/admindel/deluser/{{nick}}">{{nick}}</a><br>
+    {% endfor %}
+</div>
+{% endblock %}
+
+
